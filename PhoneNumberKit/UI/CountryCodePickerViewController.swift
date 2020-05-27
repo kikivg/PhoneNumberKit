@@ -59,7 +59,7 @@ public class CountryCodePickerViewController: UITableViewController {
 
     var filteredCountries: [Country] = []
 
-    weak var delegate: CountryCodePickerDelegate?
+    public weak var delegate: CountryCodePickerDelegate?
 
     lazy var cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissAnimated))
 
