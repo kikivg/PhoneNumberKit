@@ -4,7 +4,7 @@
 import UIKit
 
 @available(iOS 11.0, *)
-protocol CountryCodePickerDelegate: class {
+public protocol CountryCodePickerDelegate: class {
     func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country)
 }
 
@@ -206,7 +206,7 @@ extension CountryCodePickerViewController: UISearchResultsUpdating {
 // MARK: Types
 
 @available(iOS 11.0, *)
-internal extension CountryCodePickerViewController {
+public extension CountryCodePickerViewController {
 
     struct Country {
         var code: String
@@ -238,7 +238,7 @@ internal extension CountryCodePickerViewController {
         }
     }
 
-    class Cell: UITableViewCell {
+    internal class Cell: UITableViewCell {
 
         static let reuseIdentifier = "Cell"
 
